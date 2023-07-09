@@ -1,0 +1,26 @@
+The dataset I used for this visualization can be found on the following Kaggle link:
+https://www.kaggle.com/datasets/kannan1314/amazon-stock-price-all-time
+
+I am also adding the amended dataset in this project.
+
+The date format of the dataset was mm/dd/yyyy. Using excel function, I split it into three separate columns (date, month, year) as it will help me later to create a year wise pivot table. 
+
+Moreover, I kept the original date column as well to make a time series graph.
+
+Firstly, I wanted to plot the stock price for the entire period of the data. 
+
+To do this, I converted date to pandas date format using built in function. This allowed me to plot entire stock price over the given period. The visualization showed me that Amazon stock price rose exponentially. The picture and code can be found in readme file. 
+
+After this, I plotted volume over the entire period. This showed me that volumes were on average higher from 1998 to 2006 after which the volumes went drastically low.
+
+Then I plotted a scatter of volume against closing price and found that the two had an inverse relation. When high volume was traded, the stock price closed at a lower level and when volumes were low, the stock price closed higher. 
+
+To make sure I was right, I plotted the three graphs (stock price-years, volume-years, stock price-volume) and I found out that I was right and closing stock price was inversely related to volumes traded.
+
+I then plotted average monthly closing stock price of Amazon over the whole period in a heatmap and found out that closing value saw massive growth from late 2017 onward and surged in 2020 (This was due to Covid and spike in online shopping).
+
+Then I made a heat map of average volumes and saw that volumes were high in initial years after Amazon IPO.
+
+I then plotted a line graph of average closing price of Amazon stock per year and it also showed exponential growth.
+
+Then I went to plot average yearly volumes which showed a spike in initial years and decline in later years.
